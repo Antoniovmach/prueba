@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO7</title>
+<script>
+
+var num = Number(prompt ("Introduce el numero que usaremos para la operación matemática"));
+    var opcion=prompt ("Dime la operacion aritmetica que desea realizar");
+    
+
+        function sumar() {
+
+            alert ( " El resultado de la suma es " + (num+num) );
+
+        }
+
+        function restar () {
+
+            alert (" El resultado de la resta es " + (num-num));
+
+        }
+
+        function multiplicacion () {
+
+            alert ( " El resultado de la multiplicacion es " + (num*num));
+
+        }
+
+        function division () {
+
+            alert ( " El resultado de la division es " + (num/num));
+
+        }
+
+        switch (opcion) {
+
+            case "1":
+                sumar();
+                break;
+
+            case "2":
+                restar();
+                break;
+
+            case "3":
+                multiplicacion();
+                break;
+
+            case "4":
+                division();
+                break;
+
+            default:
+                alert ("No ha introducido ninguna operacion aritmetica");
+                break;
+        }
+
+
+
+
+
+</script>
+
+</head>
+<body>
+    
+</body>
+</html>
