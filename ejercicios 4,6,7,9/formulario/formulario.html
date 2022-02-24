@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="ejercicio1">
+    
+  
+    <label> NOMBRE:</label> <input id="btn_nombre" type="text" value="">
+   <br><label> APELLIDOS: </label><input id="btn_ap1" type="text" value=""> 
+   <br><label> E-MAIL: </label> <input id="btn_email" type="text" value=""> 
+    
+   <br> <input id="btn_sexoh" type="radio" name="sexo" value="Hombre" />
+   <label>Hombre</label>  <br />
+    <input id="btn_sexom" type="radio" name="sexo" value="Mujer" />
+    <label>Mujer</label> <br />
+
+    <label for="txtDescripcion">Escribe aqui tu mensaje:</label>
+ <br>
+ <textarea id="txtDescripcion" placeholder="mensaje aqui..."></textarea>
+
+ <br><input id="btn_checkmail" type="checkbox" name="miCheck"> Deseo recibir publicidad en mi e-mail
+<br>
+<label> Prodedencia:</label>
+ <select name="Pais">
+    <option value="yellow">España</option> 
+    <option value="red">Francia</option> 
+    <option value="blue">Portugal</option>
+</select>
+<br>
+<label>Adjuntar archivo:</label>
+<br><input type="file" id="input" onchange="handleFiles(this.files)">
+
+
+    <br><input id="btn_ventana" type="button" value="enviar" onclick="contraseña()">
+    <input id="btn_borrar" type="button" value="borrar datos" onclick="borrar()">
+    </select>
+</form>
+    <script>
+
+       
+       function contraseña () {
+            if (document.getElementById("btn_email").value.indexOf("@") > 0) {
+                
+               
+                alert((document.getElementById("btn_email").value)+ " es un email valido")
+                
+            }
+            else {
+               
+                alert((document.getElementById("btn_email").value)+ "no es un email valido")
+            }
+
+          
+         
+            //podia copiar el codigo directamanete pero esto es a lo mas cerano que he logrado sin copiar de internet
+    }
+
+</script>
+</body>
+</html>

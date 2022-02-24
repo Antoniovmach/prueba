@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+    <script>
+class cliente{
+        cliente(nombre,salario,ingresar,extraer){
+            this.nombre = nombre;
+            this.extraer = extraer;
+            this.ingresar = ingresar;
+            this.salario = salario+extraer-ingresar;
+
+        }
+        saludar() {
+            console.log('${this.salario}');
+        }
+}
+
+let cliente = new cliente('juan', 0, 3,100);
+
+alert.cliente.saludar();
+</script>
+</body>
+</html>
